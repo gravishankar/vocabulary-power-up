@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vocab Power-Up: 30-Day Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Vocab Power-Up</h1>
+    <p class="tagline">15 minutes a day to a more powerful vocabulary</p>
+    <div class="streak">
+      <span id="streakFlame">🔥</span>
+      <span id="streakCount">0</span> day streak
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="daySelect">Choose Day:</label>
+      <select id="daySelect"></select>
+      <button id="startLesson">Start Lesson</button>
+      <button id="exportCSV" class="ghost">Export CSV</button>
+      <button id="resetProgress" class="ghost">Reset Progress</button>
+    </section>
+
+    <section id="lesson" class="card hidden">
+      <h2 id="lessonTitle"></h2>
+      <p id="lessonIntro" class="muted"></p>
+      <div id="activityContainer"></div>
+      <div class="lesson-actions">
+        <button id="prevActivity">◀ Prev</button>
+        <button id="nextActivity">Next ▶</button>
+      </div>
+    </section>
+
+    <section id="results" class="card hidden">
+      <h2>Lesson Summary</h2>
+      <div id="summary"></div>
+      <button id="resetBtn">Back to Days</button>
+    </section>
+
+    <section class="card tips">
+      <h3>How to embed in Google Sites</h3>
+      <ol>
+        <li>Host on GitHub Pages.</li>
+        <li>In Google Sites: Insert → Embed → URL → paste your GitHub Pages link.</li>
+        <li>Resize the embed to fit the page width.</li>
+      </ol>
+    </section>
+  
+    <section class="card tips">
+      <h3>Pronunciation Practice (TTS + Mic)</h3>
+      <p class="muted">Click <em>Speak</em> to hear a word. Click <em>Record</em> and say the word; we’ll compare your speech to the target. Accuracy of speech recognition varies by browser.</p>
+    </section>
+  </main>
+    
+
+  <footer>
+    <small>Built for GitHub Pages • No backend required • Progress saved on this device</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
