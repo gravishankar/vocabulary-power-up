@@ -1,0 +1,31 @@
+{
+  "day": 5,
+  "title": "Day 5 \u2022 Doctors & Specialists",
+  "intro": "Match specialists to their focus areas.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Pick the correct specialist.",
+      "questions": [
+        {
+          "prompt": "Treats skin diseases",
+          "options": [
+            "dermatologist",
+            "podiatrist",
+            "psychiatrist"
+          ],
+          "answer": "dermatologist"
+        },
+        {
+          "prompt": "Straightens teeth",
+          "options": [
+            "orthodontist",
+            "obstetrician",
+            "ophthalmologist"
+          ],
+          "answer": "orthodontist"
+        }
+      ]
+    }
+  ]
+}

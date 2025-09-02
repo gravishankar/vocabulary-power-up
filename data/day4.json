@@ -1,0 +1,40 @@
+{
+  "day": 4,
+  "title": "Day 4 \u2022 Words for Mature Minds",
+  "intro": "Define and use nuanced words that often need life experience to grasp.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the best meaning.",
+      "questions": [
+        {
+          "prompt": "vicarious",
+          "options": [
+            "experienced through another",
+            "experienced directly",
+            "self-denying"
+          ],
+          "answer": "experienced through another"
+        },
+        {
+          "prompt": "gregarious",
+          "options": [
+            "company-loving",
+            "miserly",
+            "sad"
+          ],
+          "answer": "company-loving"
+        },
+        {
+          "prompt": "maudlin",
+          "options": [
+            "tearfully sentimental",
+            "calm",
+            "skeptical"
+          ],
+          "answer": "tearfully sentimental"
+        }
+      ]
+    }
+  ]
+}

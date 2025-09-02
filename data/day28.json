@@ -1,0 +1,58 @@
+{
+  "day": 28,
+  "title": "Day 28 \u2022 Words from Classic Roots",
+  "intro": "Reinforce Greek/Latin stems to multiply vocabulary.",
+  "activities": [
+    {
+      "type": "roots_match",
+      "instructions": "Study stems and sample derivatives.",
+      "pairs": [
+        {
+          "root": "aequus (equal/even)",
+          "meaning": "equal; even",
+          "examples": [
+            "equanimity",
+            "equitable",
+            "equation"
+          ]
+        },
+        {
+          "root": "unus (one)",
+          "meaning": "one; single",
+          "examples": [
+            "unify",
+            "unison",
+            "unilateral"
+          ]
+        },
+        {
+          "root": "bene/volens (well/wishing)",
+          "meaning": "well; wishing",
+          "examples": [
+            "benefactor",
+            "benediction",
+            "voluntary"
+          ]
+        },
+        {
+          "root": "facere (to do/make)",
+          "meaning": "to do; to make",
+          "examples": [
+            "factory",
+            "manufacture",
+            "benefaction"
+          ]
+        },
+        {
+          "root": "mono / bi / poly",
+          "meaning": "one / two / many",
+          "examples": [
+            "monogamy",
+            "bicycle",
+            "polytheism"
+          ]
+        }
+      ]
+    }
+  ]
+}

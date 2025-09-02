@@ -1,0 +1,103 @@
+{
+  "day": 24,
+  "title": "Day 24 \u2022 Words That Describe You",
+  "intro": "Adjectives and labels for character, attitude, and taste.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Pick the closest meaning.",
+      "questions": [
+        {
+          "prompt": "dilettante",
+          "options": [
+            "expert professional",
+            "superficial dabbler",
+            "coin collector"
+          ],
+          "answer": "superficial dabbler"
+        },
+        {
+          "prompt": "philistine",
+          "options": [
+            "broad-minded lover of art",
+            "materialistic, narrow to the arts",
+            "recklessly generous"
+          ],
+          "answer": "materialistic, narrow to the arts"
+        },
+        {
+          "prompt": "profligate",
+          "options": [
+            "recklessly extravagant",
+            "thrifty",
+            "overly cautious"
+          ],
+          "answer": "recklessly extravagant"
+        },
+        {
+          "prompt": "uxorious",
+          "options": [
+            "fondly submissive to one\u2019s wife",
+            "hostile to marriage",
+            "fearful of women"
+          ],
+          "answer": "fondly submissive to one\u2019s wife"
+        },
+        {
+          "prompt": "catholic (taste)",
+          "options": [
+            "narrow and exclusive",
+            "broad and universal",
+            "religious only"
+          ],
+          "answer": "broad and universal"
+        },
+        {
+          "prompt": "altruistic",
+          "options": [
+            "self-interested",
+            "unselfishly concerned for others",
+            "indifferent"
+          ],
+          "answer": "unselfishly concerned for others"
+        },
+        {
+          "prompt": "epicurean",
+          "options": [
+            "indifferent to pleasure",
+            "devoted to refined pleasures",
+            "prone to fear"
+          ],
+          "answer": "devoted to refined pleasures"
+        },
+        {
+          "prompt": "stoic",
+          "options": [
+            "indifferent to pleasure and pain",
+            "easily angered",
+            "talkative"
+          ],
+          "answer": "indifferent to pleasure and pain"
+        },
+        {
+          "prompt": "parsimonious",
+          "options": [
+            "penny-pinching; very frugal",
+            "lavish",
+            "generous"
+          ],
+          "answer": "penny-pinching; very frugal"
+        },
+        {
+          "prompt": "chauvinistic",
+          "options": [
+            "excessively patriotic",
+            "fearful of thunder",
+            "fond of coins"
+          ],
+          "answer": "excessively patriotic"
+        }
+      ]
+    }
+  ]
+}

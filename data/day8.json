@@ -1,0 +1,31 @@
+{
+  "day": 8,
+  "title": "Day 8 \u2022 Words About Feelings",
+  "intro": "Words that track attitudes and emotions.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the closest meaning.",
+      "questions": [
+        {
+          "prompt": "lethargy",
+          "options": [
+            "energy",
+            "sluggishness",
+            "joy"
+          ],
+          "answer": "sluggishness"
+        },
+        {
+          "prompt": "antipathy",
+          "options": [
+            "strong dislike",
+            "strong liking",
+            "confusion"
+          ],
+          "answer": "strong dislike"
+        }
+      ]
+    }
+  ]
+}

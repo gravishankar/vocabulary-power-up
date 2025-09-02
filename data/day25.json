@@ -1,0 +1,76 @@
+{
+  "day": 25,
+  "title": "Day 25 \u2022 Human Faults II",
+  "intro": "Sharpen recognition of tricky faults and quirks.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the best meaning.",
+      "questions": [
+        {
+          "prompt": "anomaly",
+          "options": [
+            "regular pattern",
+            "deviation from the norm",
+            "pleasant sound"
+          ],
+          "answer": "deviation from the norm"
+        },
+        {
+          "prompt": "rationalize",
+          "options": [
+            "admit error simply",
+            "explain away with plausible reasons",
+            "complicate needlessly"
+          ],
+          "answer": "explain away with plausible reasons"
+        },
+        {
+          "prompt": "braggadocio",
+          "options": [
+            "modest praise",
+            "boastful talk",
+            "sadness"
+          ],
+          "answer": "boastful talk"
+        },
+        {
+          "prompt": "idiosyncrasy",
+          "options": [
+            "universal habit",
+            "distinctive personal quirk",
+            "legal doctrine"
+          ],
+          "answer": "distinctive personal quirk"
+        },
+        {
+          "prompt": "fiasco",
+          "options": [
+            "brilliant success",
+            "ridiculous failure",
+            "minor mistake"
+          ],
+          "answer": "ridiculous failure"
+        },
+        {
+          "prompt": "penury",
+          "options": [
+            "great wealth",
+            "extreme poverty",
+            "moderate pay"
+          ],
+          "answer": "extreme poverty"
+        },
+        {
+          "prompt": "imbroglio",
+          "options": [
+            "clear solution",
+            "complicated entanglement",
+            "quiet retreat"
+          ],
+          "answer": "complicated entanglement"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "day": 14,
+  "title": "Day 14 \u2022 Words for Human Traits",
+  "intro": "Adjectives that describe conduct and character.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the best meaning.",
+      "questions": [
+        {
+          "prompt": "loquacious",
+          "options": [
+            "talkative",
+            "lazy",
+            "sad"
+          ],
+          "answer": "talkative"
+        },
+        {
+          "prompt": "taciturn",
+          "options": [
+            "silent/reserved",
+            "extravagant",
+            "easily fooled"
+          ],
+          "answer": "silent/reserved"
+        },
+        {
+          "prompt": "iconoclastic",
+          "options": [
+            "attacking cherished traditions",
+            "loving food",
+            "carelessly done"
+          ],
+          "answer": "attacking cherished traditions"
+        }
+      ]
+    }
+  ]
+}

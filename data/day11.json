@@ -1,0 +1,40 @@
+{
+  "day": 11,
+  "title": "Day 11 \u2022 Phobias & Manias",
+  "intro": "Explore words for mental peculiarities, fears, and compulsions.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the best match.",
+      "questions": [
+        {
+          "prompt": "acrophobia",
+          "options": [
+            "fear of heights",
+            "fear of water",
+            "fear of cats"
+          ],
+          "answer": "fear of heights"
+        },
+        {
+          "prompt": "kleptomania",
+          "options": [
+            "compulsion to steal",
+            "compulsion to sleep",
+            "compulsion to speak"
+          ],
+          "answer": "compulsion to steal"
+        },
+        {
+          "prompt": "insomnia",
+          "options": [
+            "loss of memory",
+            "inability to sleep",
+            "sleep-walking"
+          ],
+          "answer": "inability to sleep"
+        }
+      ]
+    }
+  ]
+}

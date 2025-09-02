@@ -1,0 +1,31 @@
+{
+  "day": 10,
+  "title": "Day 10 \u2022 Words About Your Fellow Men",
+  "intro": "Terms describing people and avocations.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Pick the best meaning.",
+      "questions": [
+        {
+          "prompt": "demagogue",
+          "options": [
+            "foments discontent for power",
+            "serious scholar of language",
+            "beginner"
+          ],
+          "answer": "foments discontent for power"
+        },
+        {
+          "prompt": "virtuoso",
+          "options": [
+            "highly skilled artist",
+            "coin-collector",
+            "gourmet"
+          ],
+          "answer": "highly skilled artist"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "day": 15,
+  "title": "Day 15 \u2022 Words for Human Faults",
+  "intro": "Words that label minor sins, blunders, and tricky situations.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Pick the closest meaning.",
+      "questions": [
+        {
+          "prompt": "peccadillo",
+          "options": [
+            "a slight sin",
+            "great wealth",
+            "bragging"
+          ],
+          "answer": "a slight sin"
+        },
+        {
+          "prompt": "panacea",
+          "options": [
+            "cure for all ills",
+            "boastful talk",
+            "poverty"
+          ],
+          "answer": "cure for all ills"
+        },
+        {
+          "prompt": "chicanery",
+          "options": [
+            "ethical conduct",
+            "legal trickery",
+            "simple error"
+          ],
+          "answer": "legal trickery"
+        }
+      ]
+    }
+  ]
+}

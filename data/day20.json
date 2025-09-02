@@ -1,0 +1,40 @@
+{
+  "day": 20,
+  "title": "Day 20 \u2022 Learning Words the Modern Way",
+  "intro": "Use context clues to infer meanings.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Pick the best meaning from context.",
+      "questions": [
+        {
+          "prompt": "He argued **vociferously**, refusing to lower his voice.",
+          "options": [
+            "quietly",
+            "loudly/vehemently",
+            "hesitantly"
+          ],
+          "answer": "loudly/vehemently"
+        },
+        {
+          "prompt": "She completed the task **cursorily**, glancing over details.",
+          "options": [
+            "thoroughly",
+            "hastily/superficially",
+            "creatively"
+          ],
+          "answer": "hastily/superficially"
+        },
+        {
+          "prompt": "They negotiated **adroitly**, avoiding conflict.",
+          "options": [
+            "clumsily",
+            "skillfully",
+            "angrily"
+          ],
+          "answer": "skillfully"
+        }
+      ]
+    }
+  ]
+}

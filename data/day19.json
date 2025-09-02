@@ -1,0 +1,40 @@
+{
+  "day": 19,
+  "title": "Day 19 \u2022 Adjectives Give You Power",
+  "intro": "Adjectives that condense thought and sharpen description.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the best meaning.",
+      "questions": [
+        {
+          "prompt": "perfunctory",
+          "options": [
+            "done mechanically; superficial",
+            "exceptionally careful",
+            "brutally honest"
+          ],
+          "answer": "done mechanically; superficial"
+        },
+        {
+          "prompt": "surreptitious",
+          "options": [
+            "secret; by improper means",
+            "loud and noisy",
+            "hilarious"
+          ],
+          "answer": "secret; by improper means"
+        },
+        {
+          "prompt": "macabre",
+          "options": [
+            "suggesting death",
+            "childish",
+            "very learned"
+          ],
+          "answer": "suggesting death"
+        }
+      ]
+    }
+  ]
+}

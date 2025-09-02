@@ -1,0 +1,85 @@
+{
+  "day": 26,
+  "title": "Day 26 \u2022 Context Power-Ups",
+  "intro": "Master high-precision adverbs and phrases through context.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Pick the best meaning from context.",
+      "questions": [
+        {
+          "prompt": "vociferously",
+          "options": [
+            "quietly",
+            "loudly/vehemently",
+            "furtively"
+          ],
+          "answer": "loudly/vehemently"
+        },
+        {
+          "prompt": "circumspectly",
+          "options": [
+            "recklessly",
+            "cautiously; watchfully",
+            "cheerfully"
+          ],
+          "answer": "cautiously; watchfully"
+        },
+        {
+          "prompt": "concomitantly",
+          "options": [
+            "separately",
+            "at the same time; accompanying",
+            "afterward"
+          ],
+          "answer": "at the same time; accompanying"
+        },
+        {
+          "prompt": "glibly",
+          "options": [
+            "with smooth but shallow fluency",
+            "painfully slowly",
+            "with deep hesitation"
+          ],
+          "answer": "with smooth but shallow fluency"
+        },
+        {
+          "prompt": "plaintively",
+          "options": [
+            "joyfully",
+            "sorrowfully",
+            "angrily"
+          ],
+          "answer": "sorrowfully"
+        },
+        {
+          "prompt": "irascibly",
+          "options": [
+            "calmly",
+            "angrily; hot-temperedly",
+            "confidently"
+          ],
+          "answer": "angrily; hot-temperedly"
+        },
+        {
+          "prompt": "sub rosa",
+          "options": [
+            "publicly",
+            "secretly",
+            "incorrectly"
+          ],
+          "answer": "secretly"
+        },
+        {
+          "prompt": "impunity",
+          "options": [
+            "with punishment",
+            "without punishment",
+            "with apology"
+          ],
+          "answer": "without punishment"
+        }
+      ]
+    }
+  ]
+}

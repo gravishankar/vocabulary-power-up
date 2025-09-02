@@ -1,0 +1,31 @@
+{
+  "day": 7,
+  "title": "Day 7 \u2022 Words About Theories",
+  "intro": "Match beliefs and philosophies to definitions.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Pick the best match.",
+      "questions": [
+        {
+          "prompt": "atheist",
+          "options": [
+            "believes there is no God",
+            "believes everything is fate",
+            "indifferent to pain"
+          ],
+          "answer": "believes there is no God"
+        },
+        {
+          "prompt": "altruism",
+          "options": [
+            "self-interest first",
+            "unselfish concern for others",
+            "love of food"
+          ],
+          "answer": "unselfish concern for others"
+        }
+      ]
+    }
+  ]
+}

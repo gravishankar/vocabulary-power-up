@@ -1,0 +1,58 @@
+{
+  "day": 27,
+  "title": "Day 27 \u2022 Test Your Progress",
+  "intro": "Mixed review from Days 23\u201326.",
+  "activities": [
+    {
+      "type": "progress_quiz",
+      "instructions": "Answer the review items.",
+      "questions": [
+        {
+          "prompt": "Meaning of 'b\u00eate noire'",
+          "options": [
+            "dreaded thing",
+            "favorite dish",
+            "close ally"
+          ],
+          "answer": "dreaded thing"
+        },
+        {
+          "prompt": "'Profligate' most nearly means",
+          "options": [
+            "stingy",
+            "recklessly extravagant",
+            "obedient"
+          ],
+          "answer": "recklessly extravagant"
+        },
+        {
+          "prompt": "'Fiasco' is a",
+          "options": [
+            "great success",
+            "ridiculous failure",
+            "minor deviation"
+          ],
+          "answer": "ridiculous failure"
+        },
+        {
+          "prompt": "'Circumspectly' means",
+          "options": [
+            "recklessly",
+            "cautiously",
+            "noisily"
+          ],
+          "answer": "cautiously"
+        },
+        {
+          "prompt": "The phrase 'sub rosa' means",
+          "options": [
+            "openly",
+            "secretly",
+            "sadly"
+          ],
+          "answer": "secretly"
+        }
+      ]
+    }
+  ]
+}

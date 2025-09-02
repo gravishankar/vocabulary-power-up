@@ -1,0 +1,31 @@
+{
+  "day": 16,
+  "title": "Day 16 \u2022 You Help Create the American Language",
+  "intro": "Understand how words enter and evolve in the language.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the best answer.",
+      "questions": [
+        {
+          "prompt": "Which most closely explains how meanings are fixed in language?",
+          "options": [
+            "official decree",
+            "usage and context over time",
+            "random chance"
+          ],
+          "answer": "usage and context over time"
+        },
+        {
+          "prompt": "A modern example of a coined word entering common use:",
+          "options": [
+            "telecast",
+            "stone-age",
+            "hieroglyph"
+          ],
+          "answer": "telecast"
+        }
+      ]
+    }
+  ]
+}

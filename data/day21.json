@@ -1,0 +1,58 @@
+{
+  "day": 21,
+  "title": "Day 21 \u2022 Words from the Latin (Roots)",
+  "intro": "Build vocabulary by mastering Latin stems.",
+  "activities": [
+    {
+      "type": "roots_match",
+      "instructions": "Study these stems and examples.",
+      "pairs": [
+        {
+          "root": "anima (soul/spirit/mind)",
+          "meaning": "soul, spirit, mind",
+          "examples": [
+            "animate",
+            "equanimity",
+            "magnanimous"
+          ]
+        },
+        {
+          "root": "magnus (large/great)",
+          "meaning": "large, big, great",
+          "examples": [
+            "magnify",
+            "magnitude",
+            "magnate"
+          ]
+        },
+        {
+          "root": "dicere (to say/tell)",
+          "meaning": "to say, to tell",
+          "examples": [
+            "dictate",
+            "diction",
+            "predict"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "instructions": "Match each Latin root to its meaning.",
+      "pairs": [
+        {
+          "left": "anima",
+          "right": "soul; spirit; mind"
+        },
+        {
+          "left": "magnus",
+          "right": "large; big; great"
+        },
+        {
+          "left": "dicere",
+          "right": "to say; to tell"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "day": 12,
+  "title": "Day 12 \u2022 Words About Feelings",
+  "intro": "Learn words for thoughts, feelings, attitudes, and emotions.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Select the closest meaning.",
+      "questions": [
+        {
+          "prompt": "nostalgia",
+          "options": [
+            "homesickness/longing for the past",
+            "hatred of people",
+            "overflowing energy"
+          ],
+          "answer": "homesickness/longing for the past"
+        },
+        {
+          "prompt": "supercilious",
+          "options": [
+            "humble",
+            "haughtily contemptuous",
+            "joyful"
+          ],
+          "answer": "haughtily contemptuous"
+        },
+        {
+          "prompt": "compunction",
+          "options": [
+            "indifference",
+            "regret/scruples",
+            "certainty"
+          ],
+          "answer": "regret/scruples"
+        }
+      ]
+    },
+    {
+      "type": "pronunciation",
+      "instructions": "Practice pronouncing each word; the mic will try to detect what you said.",
+      "items": [
+        {
+          "word": "nostalgia"
+        },
+        {
+          "word": "supercilious"
+        },
+        {
+          "word": "compunction"
+        }
+      ]
+    }
+  ]
+}

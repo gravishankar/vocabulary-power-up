@@ -1,0 +1,103 @@
+{
+  "day": 23,
+  "title": "Day 23 \u2022 Can You Meet This Challenge?",
+  "intro": "Quiz yourself on foreign phrases and precise descriptors.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the best meaning.",
+      "questions": [
+        {
+          "prompt": "b\u00eate noire",
+          "options": [
+            "favorite hobby",
+            "a dreaded person/thing",
+            "a close friend"
+          ],
+          "answer": "a dreaded person/thing"
+        },
+        {
+          "prompt": "carte blanche",
+          "options": [
+            "unconditional authority",
+            "a public apology",
+            "secret meeting"
+          ],
+          "answer": "unconditional authority"
+        },
+        {
+          "prompt": "esoteric",
+          "options": [
+            "widely popular",
+            "for a small, initiated group",
+            "childish"
+          ],
+          "answer": "for a small, initiated group"
+        },
+        {
+          "prompt": "forte",
+          "options": [
+            "weakness",
+            "strong point",
+            "musical error"
+          ],
+          "answer": "strong point"
+        },
+        {
+          "prompt": "impasse",
+          "options": [
+            "easy shortcut",
+            "dead-end; no way out",
+            "secret route"
+          ],
+          "answer": "dead-end; no way out"
+        },
+        {
+          "prompt": "incongruous",
+          "options": [
+            "perfectly fitting",
+            "out of place",
+            "very loud"
+          ],
+          "answer": "out of place"
+        },
+        {
+          "prompt": "moribund",
+          "options": [
+            "growing fast",
+            "in a dying state",
+            "sleep-inducing"
+          ],
+          "answer": "in a dying state"
+        },
+        {
+          "prompt": "nebulous",
+          "options": [
+            "clear",
+            "hazily defined",
+            "audible"
+          ],
+          "answer": "hazily defined"
+        },
+        {
+          "prompt": "scurrilous",
+          "options": [
+            "refined and polite",
+            "coarsely abusive",
+            "mildly amusing"
+          ],
+          "answer": "coarsely abusive"
+        },
+        {
+          "prompt": "soporific",
+          "options": [
+            "sleep-inducing",
+            "energizing",
+            "loud"
+          ],
+          "answer": "sleep-inducing"
+        }
+      ]
+    }
+  ]
+}

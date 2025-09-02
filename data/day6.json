@@ -1,0 +1,58 @@
+{
+  "day": 6,
+  "title": "Day 6 \u2022 Verbs Give You Power",
+  "intro": "Precise verbs level up expression.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the best meaning.",
+      "questions": [
+        {
+          "prompt": "procrastinate",
+          "options": [
+            "postpone",
+            "hurry",
+            "improve"
+          ],
+          "answer": "postpone"
+        },
+        {
+          "prompt": "scintillate",
+          "options": [
+            "sparkle",
+            "sleep",
+            "hide"
+          ],
+          "answer": "sparkle"
+        },
+        {
+          "prompt": "mulct",
+          "options": [
+            "defraud",
+            "decorate",
+            "multiply"
+          ],
+          "answer": "defraud"
+        }
+      ]
+    },
+    {
+      "type": "pronunciation",
+      "instructions": "Listen and then pronounce each verb clearly.",
+      "items": [
+        {
+          "word": "procrastinate",
+          "sentence": "Don\u2019t procrastinate on your homework."
+        },
+        {
+          "word": "scintillate",
+          "sentence": "Fireflies scintillate in the night."
+        },
+        {
+          "word": "mulct",
+          "sentence": "They tried to mulct the tourists."
+        }
+      ]
+    }
+  ]
+}

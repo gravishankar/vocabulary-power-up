@@ -1,0 +1,148 @@
+{
+  "day": 30,
+  "title": "Day 30 \u2022 Your 30-Day Vocabulary Test",
+  "intro": "Comprehensive final assessment across all modules.",
+  "activities": [
+    {
+      "type": "progress_quiz",
+      "instructions": "Mark the best answer.",
+      "questions": [
+        {
+          "prompt": "egocentric",
+          "options": [
+            "self-centered",
+            "broad-minded",
+            "easily fooled"
+          ],
+          "answer": "self-centered"
+        },
+        {
+          "prompt": "entomology",
+          "options": [
+            "study of coins",
+            "study of insects",
+            "study of birds"
+          ],
+          "answer": "study of insects"
+        },
+        {
+          "prompt": "taciturn",
+          "options": [
+            "silent/reserved",
+            "talkative",
+            "childish"
+          ],
+          "answer": "silent/reserved"
+        },
+        {
+          "prompt": "panacea",
+          "options": [
+            "cure-all",
+            "boastful talk",
+            "poverty"
+          ],
+          "answer": "cure-all"
+        },
+        {
+          "prompt": "macabre",
+          "options": [
+            "suggesting death",
+            "pleasant",
+            "carefree"
+          ],
+          "answer": "suggesting death"
+        },
+        {
+          "prompt": "Antonym (beginning with 's') for 'tall'",
+          "options": [
+            "small",
+            "soft",
+            "short"
+          ],
+          "answer": "short"
+        },
+        {
+          "prompt": "Closest antonym for 'taciturn'",
+          "options": [
+            "loquacious",
+            "ascetic",
+            "stoic"
+          ],
+          "answer": "loquacious"
+        },
+        {
+          "prompt": "vociferously",
+          "options": [
+            "quietly",
+            "loudly/vehemently",
+            "secretly"
+          ],
+          "answer": "loudly/vehemently"
+        },
+        {
+          "prompt": "circumspectly",
+          "options": [
+            "recklessly",
+            "cautiously",
+            "boastfully"
+          ],
+          "answer": "cautiously"
+        },
+        {
+          "prompt": "demagogue",
+          "options": [
+            "foments discontent for power",
+            "language scholar",
+            "beginner"
+          ],
+          "answer": "foments discontent for power"
+        },
+        {
+          "prompt": "virtuoso",
+          "options": [
+            "highly skilled artist",
+            "coin-collector",
+            "gourmet"
+          ],
+          "answer": "highly skilled artist"
+        },
+        {
+          "prompt": "carte blanche",
+          "options": [
+            "limited approval",
+            "unconditional authority",
+            "public apology"
+          ],
+          "answer": "unconditional authority"
+        },
+        {
+          "prompt": "b\u00eate noire",
+          "options": [
+            "favorite pastime",
+            "dreaded thing",
+            "lucky charm"
+          ],
+          "answer": "dreaded thing"
+        },
+        {
+          "prompt": "Root 'dicere' means",
+          "options": [
+            "to bind",
+            "to say/tell",
+            "to make"
+          ],
+          "answer": "to say/tell"
+        },
+        {
+          "prompt": "'mono' as a prefix means",
+          "options": [
+            "many",
+            "one",
+            "two"
+          ],
+          "answer": "one"
+        }
+      ]
+    }
+  ]
+}

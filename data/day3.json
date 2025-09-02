@@ -1,0 +1,40 @@
+{
+  "day": 3,
+  "title": "Day 3 \u2022 The Romance of Words (Roots)",
+  "intro": "Learn powerful roots to unlock many words at once.",
+  "activities": [
+    {
+      "type": "roots_match",
+      "instructions": "Study these roots and their meanings.",
+      "pairs": [
+        {
+          "root": "anima (Latin)",
+          "meaning": "soul, spirit, mind",
+          "examples": [
+            "animate",
+            "equanimity",
+            "magnanimous"
+          ]
+        },
+        {
+          "root": "graph (Greek)",
+          "meaning": "to write",
+          "examples": [
+            "telegraph",
+            "phonograph",
+            "stenographer"
+          ]
+        },
+        {
+          "root": "spirare (Latin)",
+          "meaning": "to breathe",
+          "examples": [
+            "inspire",
+            "respiration",
+            "perspire"
+          ]
+        }
+      ]
+    }
+  ]
+}

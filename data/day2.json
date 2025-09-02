@@ -1,0 +1,51 @@
+{
+  "day": 2,
+  "title": "Day 2 \u2022 Your Word Portrait (Diagnostic)",
+  "intro": "Quick checks on antonyms, synonyms, and meanings.",
+  "activities": [
+    {
+      "type": "antonym_test",
+      "instructions": "Antonyms beginning with 's' (demo).",
+      "questions": [
+        {
+          "prompt": "tall",
+          "answer": "short"
+        },
+        {
+          "prompt": "happy",
+          "answer": "sad"
+        }
+      ]
+    },
+    {
+      "type": "synonym_test",
+      "instructions": "Two synonyms (comma separated).",
+      "questions": [
+        {
+          "prompt": "defects",
+          "answers": [
+            "flaws",
+            "imperfections",
+            "faults",
+            "blemishes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "instructions": "Word meaning.",
+      "questions": [
+        {
+          "prompt": "Meaning of 'ennui'?",
+          "options": [
+            "joy",
+            "boredom",
+            "anger"
+          ],
+          "answer": "boredom"
+        }
+      ]
+    }
+  ]
+}

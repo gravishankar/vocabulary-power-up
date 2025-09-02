@@ -1,0 +1,49 @@
+{
+  "day": 9,
+  "title": "Day 9 \u2022 Test Your Progress",
+  "intro": "Review of Days 2\u20138 (subset demo).",
+  "activities": [
+    {
+      "type": "progress_quiz",
+      "instructions": "Mixed review items.",
+      "questions": [
+        {
+          "prompt": "Antonym (beginning with 's') for 'tall'",
+          "options": [
+            "small",
+            "short",
+            "soft"
+          ],
+          "answer": "short"
+        },
+        {
+          "prompt": "Meaning of 'ennui'",
+          "options": [
+            "boredom",
+            "rage",
+            "joy"
+          ],
+          "answer": "boredom"
+        },
+        {
+          "prompt": "Root meaning of 'graph'",
+          "options": [
+            "to write",
+            "to see",
+            "to bind"
+          ],
+          "answer": "to write"
+        },
+        {
+          "prompt": "Meaning of 'altruism'",
+          "options": [
+            "selfishness",
+            "unselfish concern for others",
+            "greed"
+          ],
+          "answer": "unselfish concern for others"
+        }
+      ]
+    }
+  ]
+}

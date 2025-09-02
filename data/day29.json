@@ -1,0 +1,49 @@
+{
+  "day": 29,
+  "title": "Day 29 \u2022 Words Change Their Meanings",
+  "intro": "Meanings evolve. Use context to select the intended sense.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Choose the intended sense from the options.",
+      "questions": [
+        {
+          "prompt": "In many contexts, 'sanction' can mean",
+          "options": [
+            "approve or penalize (depends on context)",
+            "only approve",
+            "only penalize"
+          ],
+          "answer": "approve or penalize (depends on context)"
+        },
+        {
+          "prompt": "A 'literal' statement is best when it is",
+          "options": [
+            "precisely true to fact",
+            "figuratively expressive",
+            "secretive"
+          ],
+          "answer": "precisely true to fact"
+        },
+        {
+          "prompt": "Semantic change is primarily traced through",
+          "options": [
+            "etymology + current usage",
+            "personal preference",
+            "spelling alone"
+          ],
+          "answer": "etymology + current usage"
+        },
+        {
+          "prompt": "The safest way to infer meaning shifts is to rely on",
+          "options": [
+            "the sentence/paragraph context",
+            "a single synonym",
+            "word length"
+          ],
+          "answer": "the sentence/paragraph context"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "day": 22,
+  "title": "Day 22 \u2022 Test Your Progress",
+  "intro": "Partial review of Days 10\u201321 (subset).",
+  "activities": [
+    {
+      "type": "progress_quiz",
+      "instructions": "Mixed review items.",
+      "questions": [
+        {
+          "prompt": "A 'demagogue' is one who",
+          "options": [
+            "collects stamps",
+            "foments discontent for power",
+            "loves refined food"
+          ],
+          "answer": "foments discontent for power"
+        },
+        {
+          "prompt": "'Loquacious' most nearly means",
+          "options": [
+            "talkative",
+            "lazy",
+            "quiet"
+          ],
+          "answer": "talkative"
+        },
+        {
+          "prompt": "'Panacea' is",
+          "options": [
+            "cure-all",
+            "bragging",
+            "poverty"
+          ],
+          "answer": "cure-all"
+        },
+        {
+          "prompt": "Root meaning of 'dicere' is",
+          "options": [
+            "to do",
+            "to bind",
+            "to say"
+          ],
+          "answer": "to say"
+        },
+        {
+          "prompt": "'Surreptitious' means",
+          "options": [
+            "secret/improper means",
+            "childish",
+            "charitable"
+          ],
+          "answer": "secret/improper means"
+        }
+      ]
+    }
+  ]
+}

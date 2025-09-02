@@ -1,0 +1,62 @@
+{
+  "day": 13,
+  "title": "Day 13 \u2022 Words that End in \u201c-ology\u201d",
+  "intro": "Match fields of study to their descriptions.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Pick the correct field of study.",
+      "questions": [
+        {
+          "prompt": "entomology",
+          "options": [
+            "study of birds",
+            "study of insects",
+            "study of rocks"
+          ],
+          "answer": "study of insects"
+        },
+        {
+          "prompt": "anthropology",
+          "options": [
+            "study of mankind",
+            "study of language",
+            "study of coins"
+          ],
+          "answer": "study of mankind"
+        },
+        {
+          "prompt": "etymology",
+          "options": [
+            "study of origin of words",
+            "study of races",
+            "study of the earth"
+          ],
+          "answer": "study of origin of words"
+        }
+      ]
+    },
+    {
+      "type": "match_pairs",
+      "instructions": "Match each field to its description.",
+      "pairs": [
+        {
+          "left": "entomology",
+          "right": "study of insects"
+        },
+        {
+          "left": "anthropology",
+          "right": "study of mankind"
+        },
+        {
+          "left": "etymology",
+          "right": "study of origin of words"
+        },
+        {
+          "left": "ornithology",
+          "right": "study of birds"
+        }
+      ]
+    }
+  ]
+}

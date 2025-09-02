@@ -1,0 +1,58 @@
+{
+  "day": 17,
+  "title": "Day 17 \u2022 Test Your Progress",
+  "intro": "Review from Days 12\u201316 (subset).",
+  "activities": [
+    {
+      "type": "progress_quiz",
+      "instructions": "Mixed review items.",
+      "questions": [
+        {
+          "prompt": "Meaning of 'nostalgia'",
+          "options": [
+            "homesickness/longing for the past",
+            "joy",
+            "anger"
+          ],
+          "answer": "homesickness/longing for the past"
+        },
+        {
+          "prompt": "'Supercilious' most nearly means",
+          "options": [
+            "humble",
+            "haughtily contemptuous",
+            "talkative"
+          ],
+          "answer": "haughtily contemptuous"
+        },
+        {
+          "prompt": "'Entomology' is the study of",
+          "options": [
+            "words",
+            "insects",
+            "birds"
+          ],
+          "answer": "insects"
+        },
+        {
+          "prompt": "'Peccadillo' is",
+          "options": [
+            "a slight sin",
+            "a grand success",
+            "a coin collection"
+          ],
+          "answer": "a slight sin"
+        },
+        {
+          "prompt": "Language change is primarily driven by",
+          "options": [
+            "usage and context",
+            "textbook rules",
+            "dictionary first"
+          ],
+          "answer": "usage and context"
+        }
+      ]
+    }
+  ]
+}

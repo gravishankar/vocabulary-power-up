@@ -1,0 +1,22 @@
+{
+  "day": 1,
+  "title": "Day 1 \u2022 Give Us 15 Minutes a Day",
+  "intro": "Welcome! Build the habit and learn the flow of daily lessons.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Warm-up: choose the best answer.",
+      "questions": [
+        {
+          "prompt": "How long is each day\u2019s session?",
+          "options": [
+            "5 minutes",
+            "15 minutes",
+            "45 minutes"
+          ],
+          "answer": "15 minutes"
+        }
+      ]
+    }
+  ]
+}

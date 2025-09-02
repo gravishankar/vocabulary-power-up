@@ -1,0 +1,40 @@
+{
+  "day": 18,
+  "title": "Day 18 \u2022 Words About Personalities",
+  "intro": "Terms that describe personality orientations and temperaments.",
+  "activities": [
+    {
+      "type": "multiple_choice",
+      "instructions": "Pick the best match.",
+      "questions": [
+        {
+          "prompt": "introvert",
+          "options": [
+            "mind turned inward",
+            "mind turned outward",
+            "both in and out"
+          ],
+          "answer": "mind turned inward"
+        },
+        {
+          "prompt": "ambivert",
+          "options": [
+            "mind turned outward",
+            "both inward and outward",
+            "self-centered"
+          ],
+          "answer": "both inward and outward"
+        },
+        {
+          "prompt": "egocentric",
+          "options": [
+            "self-centered",
+            "idealistic",
+            "bubbly"
+          ],
+          "answer": "self-centered"
+        }
+      ]
+    }
+  ]
+}
