@@ -207,7 +207,7 @@ body {
 .lesson-card,
 .results-card,
 .tips-card,
-.integration-card {
+.audio-practice-card {
     background: var(--card-gradient);
     border-radius: var(--radius-lg);
     padding: 1.5rem;
@@ -222,7 +222,7 @@ body {
 .lesson-card:hover,
 .results-card:hover,
 .tips-card:hover,
-.integration-card:hover {
+.audio-practice-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
 }
@@ -509,41 +509,86 @@ body {
     color: var(--primary-color);
 }
 
-/* Integration Steps */
-.integration-steps {
-    display: flex;
-    flex-direction: column;
+/* Audio Functionality */
+.audio-info {
+    display: grid;
     gap: 1rem;
 }
 
-.step {
+.audio-tip {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.7);
     border-radius: var(--radius-md);
     border: 1px solid rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
 }
 
-.step-number {
-    display: flex;
+.audio-tip:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+}
+
+.word-with-audio {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+}
+
+.word-with-audio:hover {
+    background: rgba(102, 126, 234, 0.2);
+}
+
+.audio-btn {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2rem;
-    height: 2rem;
+    width: 28px;
+    height: 28px;
     background: var(--secondary-gradient);
-    color: white;
+    border: none;
     border-radius: 50%;
-    font-weight: 700;
-    flex-shrink: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    color: white;
+    box-shadow: var(--shadow-soft);
 }
 
-.step-text {
-    flex: 1;
-    font-weight: 600;
-    color: var(--text-primary);
+.audio-btn:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-medium);
 }
+
+.audio-btn:active {
+    transform: scale(0.95);
+}
+
+.audio-btn.playing {
+    animation: pulse 1s infinite;
+    background: var(--accent-gradient);
+}
+
+.word-text {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+/* Audio animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
 
 /* Footer */
 .app-footer {
@@ -616,10 +661,6 @@ body {
         padding: 1rem;
     }
     
-    .integration-steps .step {
-        flex-direction: column;
-        text-align: center;
-    }
     
     .tip-item {
         flex-direction: column;

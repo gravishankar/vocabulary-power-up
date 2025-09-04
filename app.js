@@ -176,8 +176,11 @@ function renderActivity(a, idx){
     a.questions.forEach((q,i)=>{
       const qEl = document.createElement('div');
       qEl.className = "q";
-      const label = document.createElement('label');
-      label.textContent = `Antonym for "${q.prompt}"`;
+      const label = document.createElement('div');
+      label.innerHTML = `Antonym for `;
+      const wordContainer = document.createElement('span');
+      addAudioToWord(q.prompt, wordContainer);
+      label.appendChild(wordContainer);
       const input = document.createElement('input');
       input.type = "text";
       const ans = document.createElement('div');
@@ -186,8 +189,13 @@ function renderActivity(a, idx){
       btn.textContent = "Check";
       btn.addEventListener('click', ()=>{
         const correct = input.value.trim().toLowerCase() === q.answer.toLowerCase();
-        ans.innerHTML = correct ? `<span class="badge correct">✓ Correct</span>`
-                                : `<span class="badge incorrect">✗</span> Answer: ${q.answer}`;
+        const answerContainer = document.createElement('span');
+        if(correct) {
+          ans.innerHTML = `<span class="badge correct">✓ Correct</span>`;
+        } else {
+          ans.innerHTML = `<span class="badge incorrect">✗</span> Answer: `;
+          addAudioToWord(q.answer, ans);
+        }
         recordResult('antonym', correct);
       });
       qEl.appendChild(label); qEl.appendChild(input); qEl.appendChild(btn); qEl.appendChild(ans);
@@ -199,8 +207,12 @@ function renderActivity(a, idx){
     a.questions.forEach((q,i)=>{
       const qEl = document.createElement('div');
       qEl.className = "q";
-      const label = document.createElement('label');
-      label.textContent = `Two synonyms for "${q.prompt}" (comma separated)`;
+      const label = document.createElement('div');
+      label.innerHTML = `Two synonyms for `;
+      const wordContainer = document.createElement('span');
+      addAudioToWord(q.prompt, wordContainer);
+      label.appendChild(wordContainer);
+      label.appendChild(document.createTextNode(` (comma separated)`));
       const input = document.createElement('input');
       input.type = "text";
       const ans = document.createElement('div');
@@ -264,7 +276,17 @@ function renderActivity(a, idx){
       const qEl = document.createElement('div');
       qEl.className = "q";
       const p = document.createElement('p');
-      p.innerHTML = `<strong>${pair.root}</strong> → "${pair.meaning}" (example: ${pair.examples.join(', ')})`;
+      p.innerHTML = `<strong>${pair.root}</strong> → "${pair.meaning}" (examples: `;
+      
+      // Add audio buttons for example words
+      pair.examples.forEach((example, idx) => {
+        if(idx > 0) p.appendChild(document.createTextNode(', '));
+        const exampleContainer = document.createElement('span');
+        addAudioToWord(example, exampleContainer);
+        p.appendChild(exampleContainer);
+      });
+      
+      p.appendChild(document.createTextNode(')'));
       qEl.appendChild(p);
       wrap.appendChild(qEl);
     });
@@ -279,16 +301,19 @@ function renderActivity(a, idx){
     (a.items||[]).forEach(item=>{
       const row = document.createElement('div');
       row.className = 'q pronounce-row';
-      const w = document.createElement('span');
-      w.className = 'word';
-      w.textContent = item.word;
-      const speakBtn = document.createElement('button');
-      speakBtn.className = 'small';
-      speakBtn.textContent = '🔊 Speak';
-      speakBtn.addEventListener('click', ()=>{
-        const say = item.say || item.word;
-        speakText(say);
-      });
+      
+      // Use the new audio button system for consistency
+      const wordContainer = document.createElement('span');
+      addAudioToWord(item.word, wordContainer);
+      row.appendChild(wordContainer);
+      
+      if(item.sentence){
+        const s = document.createElement('span');
+        s.className = 'muted';
+        s.textContent = ' — '+item.sentence;
+        row.appendChild(s);
+      }
+      
       const recBtn = document.createElement('button');
       recBtn.className = 'small';
       recBtn.textContent = '🎤 Record';
@@ -303,14 +328,7 @@ function renderActivity(a, idx){
           recordResult('pronunciation', ok);
         });
       });
-      row.appendChild(w);
-      if(item.sentence){
-        const s = document.createElement('span');
-        s.className = 'muted';
-        s.textContent = ' — '+item.sentence;
-        row.appendChild(s);
-      }
-      row.appendChild(speakBtn);
+      
       row.appendChild(recBtn);
       row.appendChild(res);
       wrap.appendChild(row);
@@ -323,8 +341,10 @@ function renderActivity(a, idx){
     (a.pairs||[]).forEach(pair=>{
       const row = document.createElement('div');
       row.className = 'match-row q';
-      const lab = document.createElement('label');
-      lab.textContent = pair.left;
+      const lab = document.createElement('div');
+      const wordContainer = document.createElement('span');
+      addAudioToWord(pair.left, wordContainer);
+      lab.appendChild(wordContainer);
       const sel = document.createElement('select');
       sel.className = 'match';
       const first = document.createElement('option');
@@ -491,6 +511,60 @@ function speakText(text){
   }catch(e){
     alert('Speech synthesis not supported in this browser.');
   }
+}
+
+// ---- Audio Button Creation for Words
+function createAudioButton(word) {
+  const audioBtn = document.createElement('button');
+  audioBtn.className = 'audio-btn';
+  audioBtn.innerHTML = '🔊';
+  audioBtn.setAttribute('aria-label', `Pronounce ${word}`);
+  audioBtn.title = `Click to hear pronunciation of "${word}"`;
+  
+  audioBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // Add playing animation
+    audioBtn.classList.add('playing');
+    
+    try {
+      const utterance = new SpeechSynthesisUtterance(word);
+      utterance.rate = 0.9;
+      utterance.pitch = 1.0;
+      utterance.volume = 1.0;
+      
+      utterance.onend = () => {
+        audioBtn.classList.remove('playing');
+      };
+      
+      utterance.onerror = () => {
+        audioBtn.classList.remove('playing');
+        console.warn('Speech synthesis error for word:', word);
+      };
+      
+      window.speechSynthesis.speak(utterance);
+    } catch (error) {
+      audioBtn.classList.remove('playing');
+      console.error('Speech synthesis not available:', error);
+    }
+  });
+  
+  return audioBtn;
+}
+
+// ---- Add Audio to Word Elements
+function addAudioToWord(wordText, container) {
+  const wordSpan = document.createElement('span');
+  wordSpan.className = 'word-with-audio';
+  wordSpan.textContent = wordText;
+  
+  const audioBtn = createAudioButton(wordText);
+  
+  container.appendChild(wordSpan);
+  container.appendChild(audioBtn);
+  
+  return container;
 }
 
 // ---- Web Speech: basic STT (Chrome/WebKit)
