@@ -241,7 +241,23 @@ function renderActivity(a, idx){
       const qEl = document.createElement('div');
       qEl.className = "q";
       const p = document.createElement('p');
-      p.textContent = q.prompt;
+      
+      // Check if the prompt contains a vocabulary word in quotes
+      const match = q.prompt.match(/'([^']+)'/);
+      if(match) {
+        const beforeQuote = q.prompt.substring(0, q.prompt.indexOf("'"));
+        const afterQuote = q.prompt.substring(q.prompt.lastIndexOf("'") + 1);
+        const word = match[1];
+        
+        p.appendChild(document.createTextNode(beforeQuote));
+        const wordContainer = document.createElement('span');
+        addAudioToWord(word, wordContainer);
+        p.appendChild(wordContainer);
+        p.appendChild(document.createTextNode(afterQuote));
+      } else {
+        p.textContent = q.prompt;
+      }
+      
       qEl.appendChild(p);
       const group = 'mc-'+Math.random().toString(36).slice(2);
       q.options.forEach(opt=>{
@@ -261,8 +277,14 @@ function renderActivity(a, idx){
       btn.addEventListener('click', ()=>{
         const sel = qEl.querySelector('input[type=radio]:checked');
         const correct = sel && sel.value === q.answer;
-        ans.innerHTML = correct ? `<span class="badge correct">✓ Correct</span>`
-                                : `<span class="badge incorrect">✗</span> Answer: ${q.answer}`;
+        if(correct) {
+          ans.innerHTML = `<span class="badge correct">✓ Correct</span>`;
+        } else {
+          ans.innerHTML = `<span class="badge incorrect">✗</span> Answer: `;
+          const answerContainer = document.createElement('span');
+          addAudioToWord(q.answer, answerContainer);
+          ans.appendChild(answerContainer);
+        }
         recordResult('mc', !!correct);
       });
       qEl.appendChild(btn);
@@ -555,6 +577,8 @@ function createAudioButton(word) {
 
 // ---- Add Audio to Word Elements
 function addAudioToWord(wordText, container) {
+  console.log('Adding audio to word:', wordText); // Debug log
+  
   const wordSpan = document.createElement('span');
   wordSpan.className = 'word-with-audio';
   wordSpan.textContent = wordText;
