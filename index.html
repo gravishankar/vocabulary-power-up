@@ -3,63 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vocab Power-Up: 30-Day Challenge</title>
+  <title>HabbitZ Vocab Power-Up: 30-Day Challenge</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Vocab Power-Up</h1>
-    <p class="tagline">15 minutes a day to a more powerful vocabulary</p>
-    <div class="streak">
-      <span id="streakFlame">🔥</span>
-      <span id="streakCount">0</span> day streak
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="loading-logo">📚</div>
+      <h1>HabbitZ Vocab Power-Up</h1>
+      <div class="loading-spinner"></div>
+      <p>Building Your Vocabulary Superpowers...</p>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section class="controls">
-      <label for="daySelect">Choose Day:</label>
-      <select id="daySelect"></select>
-      <button id="startLesson">Start Lesson</button>
-      <button id="exportCSV" class="ghost">Export CSV</button>
-      <button id="resetProgress" class="ghost">Reset Progress</button>
-    </section>
-
-    <section id="lesson" class="card hidden">
-      <h2 id="lessonTitle"></h2>
-      <p id="lessonIntro" class="muted"></p>
-      <div id="activityContainer"></div>
-      <div class="lesson-actions">
-        <button id="prevActivity">◀ Prev</button>
-        <button id="nextActivity">Next ▶</button>
+  <!-- App Container -->
+  <div class="app-container" id="appContainer">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-content">
+        <div class="title-section">
+          <h1 class="app-title">
+            <span class="logo-emoji">📚</span>
+            HabbitZ Vocab Power-Up
+            <span class="logo-emoji">💪</span>
+          </h1>
+          <p class="app-subtitle">30-Day Vocabulary Challenge • 15 minutes a day to vocabulary mastery</p>
+        </div>
+        <div class="streak-section">
+          <div class="streak-card">
+            <span class="streak-flame" id="streakFlame">🔥</span>
+            <div class="streak-info">
+              <span class="streak-number" id="streakCount">0</span>
+              <span class="streak-label">day streak</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </header>
 
-    <section id="results" class="card hidden">
-      <h2>Lesson Summary</h2>
-      <div id="summary"></div>
-      <button id="resetBtn">Back to Days</button>
-    </section>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Day Selection Controls -->
+      <section class="control-card">
+        <div class="card-header">
+          <h2>🎯 Choose Your Challenge Day</h2>
+          <p class="card-subtitle">Select a day to start your 15-minute vocabulary workout</p>
+        </div>
+        <div class="controls">
+          <div class="day-selector">
+            <label for="daySelect" class="control-label">Day:</label>
+            <select id="daySelect" class="day-select"></select>
+          </div>
+          <div class="action-buttons">
+            <button id="startLesson" class="primary-btn">
+              <span class="btn-emoji">🚀</span>
+              Start Lesson
+            </button>
+            <button id="exportCSV" class="secondary-btn">
+              <span class="btn-emoji">📊</span>
+              Export Progress
+            </button>
+            <button id="resetProgress" class="secondary-btn">
+              <span class="btn-emoji">🔄</span>
+              Reset Progress
+            </button>
+          </div>
+        </div>
+      </section>
 
-    <section class="card tips">
-      <h3>How to embed in Google Sites</h3>
-      <ol>
-        <li>Host on GitHub Pages.</li>
-        <li>In Google Sites: Insert → Embed → URL → paste your GitHub Pages link.</li>
-        <li>Resize the embed to fit the page width.</li>
-      </ol>
-    </section>
-  
-    <section class="card tips">
-      <h3>Pronunciation Practice (TTS + Mic)</h3>
-      <p class="muted">Click <em>Speak</em> to hear a word. Click <em>Record</em> and say the word; we’ll compare your speech to the target. Accuracy of speech recognition varies by browser.</p>
-    </section>
-  </main>
-    
+      <!-- Lesson Section -->
+      <section id="lesson" class="lesson-card hidden">
+        <div class="card-header">
+          <h2 id="lessonTitle" class="lesson-title"></h2>
+          <p id="lessonIntro" class="lesson-intro"></p>
+        </div>
+        <div id="activityContainer" class="activity-container"></div>
+        <div class="lesson-navigation">
+          <button id="prevActivity" class="nav-btn prev-btn">
+            <span class="btn-emoji">◀️</span>
+            Previous
+          </button>
+          <button id="nextActivity" class="nav-btn next-btn">
+            Next
+            <span class="btn-emoji">▶️</span>
+          </button>
+        </div>
+      </section>
 
-  <footer>
-    <small>Built for GitHub Pages • No backend required • Progress saved on this device</small>
-  </footer>
+      <!-- Results Section -->
+      <section id="results" class="results-card hidden">
+        <div class="card-header">
+          <h2>🎉 Lesson Complete!</h2>
+          <p class="card-subtitle">Great job on completing today's vocabulary challenge</p>
+        </div>
+        <div id="summary" class="summary-content"></div>
+        <div class="results-actions">
+          <button id="resetBtn" class="primary-btn">
+            <span class="btn-emoji">📅</span>
+            Back to Day Selection
+          </button>
+        </div>
+      </section>
+
+      <!-- Tips Section -->
+      <section class="tips-card">
+        <div class="card-header">
+          <h3>💡 Study Tips</h3>
+        </div>
+        <div class="tips-content">
+          <div class="tip-item">
+            <span class="tip-emoji">🎯</span>
+            <div class="tip-text">
+              <strong>Daily Practice:</strong> Consistency is key! Try to complete one lesson every day.
+            </div>
+          </div>
+          <div class="tip-item">
+            <span class="tip-emoji">🔊</span>
+            <div class="tip-text">
+              <strong>Pronunciation:</strong> Use the speak button to hear correct pronunciation of words.
+            </div>
+          </div>
+          <div class="tip-item">
+            <span class="tip-emoji">📝</span>
+            <div class="tip-text">
+              <strong>Word Roots:</strong> Focus on understanding Greek and Latin roots to unlock word meanings.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integration Info -->
+      <section class="integration-card">
+        <div class="card-header">
+          <h3>🌐 Google Sites Integration</h3>
+        </div>
+        <div class="integration-steps">
+          <div class="step">
+            <span class="step-number">1</span>
+            <span class="step-text">Host this app on GitHub Pages</span>
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <span class="step-text">In Google Sites: Insert → Embed → URL</span>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <span class="step-text">Paste your GitHub Pages link and resize</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>🚀 Built with HabbitZ • GitHub Pages Ready • Progress Saved Locally</p>
+          <p class="footer-tagline">Empowering vocabulary growth through consistent daily practice</p>
+        </div>
+        <div class="footer-links">
+          <span class="footer-heart">Made with ❤️ for learners everywhere</span>
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script src="app.js"></script>
 </body>

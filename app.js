@@ -1,5 +1,39 @@
 
-// Vocab Power-Up — static client app with localStorage progress/streak
+// HabbitZ Vocab Power-Up — 30-Day Vocabulary Challenge App
+// Enhanced with loading screen and improved user experience
+
+// DOM Elements for loading
+const loadingScreen = document.getElementById('loadingScreen');
+const appContainer = document.getElementById('appContainer');
+
+// Initialize app with loading screen
+document.addEventListener('DOMContentLoaded', function() {
+    // Show loading screen initially
+    loadingScreen.classList.remove('hidden');
+    appContainer.style.opacity = '0';
+    
+    // Simulate app initialization
+    setTimeout(() => {
+        // Hide loading screen
+        loadingScreen.classList.add('hidden');
+        appContainer.style.opacity = '1';
+        appContainer.style.transition = 'opacity 0.5s ease';
+        
+        // Initialize the app
+        initializeApp();
+    }, 2000);
+});
+
+// App initialization function
+function initializeApp() {
+    console.log('🎓 HabbitZ Vocab Power-Up initialized!');
+    initStreakUI();
+    
+    // Auto-select last completed day + 1
+    const lastDay = parseInt(localStorage.getItem(LS_KEYS.lastCompletedDay) || "0");
+    const nextDay = Math.min(lastDay + 1, 30);
+    daySelect.value = nextDay;
+}
 const LS_KEYS = {
   streakCount: 'vp_streak_count',
   lastDate: 'vp_last_date',
